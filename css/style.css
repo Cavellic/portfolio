@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("images/casoe (4).jpg");
+    font-family: 'Times New Roman';
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+nav{
+    background: rgb(164, 187, 196);
+    height: 80px;
+    width: 100%;
+    position: sticky;
+}
+
+body > nav > label.logo{
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    position: absolute;
+}
+
+body > nav > ul{
+    float: right;
+    margin-right: 30px;
+}
+
+body > nav > ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 10px;
+}
+
+body > nav > ul > li a{
+    color: rgb(0, 0, 0);
+    padding: 7px 13px;
+    font-size: 25px;
+}
+
+body > div.wrapper > img{
+    float: left;
+    height: 400px;
+    max-width: 450px;
+    border: 3px solid;
+    border-radius: 250px;
+    border-color: rgb(231, 222, 222);
+    margin-right: 53px;
+    margin-top: 50px;
+
+}
+
+body .text_box{
+    text-align: center;
+    align-items: left;
+    margin-top: 90px;
+    margin-left: 0px;
+    margin-right: 100px;
+    font-size: 25px;
+    padding-top:50px;
+
+}
+body > nav > label.logo > span{
+    color: rgb(126, 1, 1);
+}
+
+
+body > nav > ul > li a:hover{
+    background: rgb(9, 7, 7);
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    transition: 1s;
+}
+body > div.wrapper > div > div i{
+    font-size: 45px;
+    padding: 0px 6px;
+    margin-left: 30px;
+}
+
+body > div > div > div.icons{
+    margin-left: 30px;
+}
+
+body > div > div > div.icons i{
+    font-size: 45px;
+    padding: 7px 20px;
+}
+body > div > div > div.body_icons > button{
+    background: #7ebeee;
+    color: antiquewhite;
+    padding: 5px 23px;
+    border-radius: 10px;
+    line-height: 25px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-left: 50px;
+    position: absolute;
+    outline-style: none;
+}
+body > div > div > div.body_icons > button:hover{
+    color: #000000;
+    background-color: aliceblue;
+}
+
+body > div.icons > i.fab.fa-square-whatsapp:hover{
+    cursor: pointer;
+}
+
+body > div > div > div.icons > i.fab.fa-square-whatsapp{
+    color: green;
+}
+
+body > div > div > div.icons > i.fab.fa-facebook{
+    color: blue;
+}
+body > div > div > div.icons > i.fab.fa-twitter{
+    color: rgb(54, 137, 200);
+}
+body > div > div > div.icons > i.fab.fa-instagram{
+    color: rgb(162, 18, 92);
+}
+
+body > div > div > div.body_icons > i.fab.fa-linkedin{
+    color: rgb(0, 107, 139);
+}
+body > div > div > div.body_icons > i.fab.fa-github{
+    background: black;
+}
+
+body > div.tech_icons{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: auto;
+}
+body > div.tech_icons i{
+    padding: 7px 23px;
+}
+
+body > div > div > div.tech_icons > span > i.fa-brands.fa-html5{
+    color: rgb(216, 55, 6);
+}
+body > div > div > div.tech_icons > span > i.fa-brands.fa-css3{
+    color: #0082e6;
+}
+
+body > div > div > div.tech_icons > span > i.fa-brands.fa-bootstrap{
+    color: #012a49;
+}
+body > div > div > div.tech_icons > span > i.fa-brands.fa-python{
+    color: #012a49;
+}
+body > div > div > div.tech_icons > span > i.fa-solid.fa-database{
+    color: #0082e6;
+}
+
+body > div > div > div.tech_icons > span > i.fa-brands.fa-html5:hover{
+    cursor: pointer;
+}
+
+body > footer{
+    color: #000000;
+    text-align: center;
+    padding-top: auto;
+}
+
+body > nav > label.checkbtn{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    float: right;
+    line-height: 70px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: list-item;
+    display: none;
+    font-size: 56px;
+}
+
+@media(max-width: 952px){
+    body > nav > label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+
+
+    }
+    body > nav > ul > li a{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 858px){
+    body > nav > label.checkbtn{
+        display: block;
+    }
+    body > nav > ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        font-size: 25px;
+        background: rgb(20, 20, 42);
+        top: 70px;
+        left: 100%;
+        left: 0;
+        text-align: center;
+        transition: all 1s;
+    }
+    body > nav > ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    body > nav > ul li a{
+        font-size: 30px;
+        color: white;
+    }
+    body > nav > ul > li a:hover{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 900px;
+    }
+}
